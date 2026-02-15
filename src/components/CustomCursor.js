@@ -37,9 +37,9 @@ const CustomCursor = () => {
       }
     };
 
-    const handleMouseOut = () => {
+    /*const handleMouseOut = () => {
       setIsVisible(false);
-    };
+    };*/
 
     window.addEventListener('mousemove', handleMouseMove);
     document.addEventListener('mouseover', handleMouseEnter, true);

@@ -30,7 +30,7 @@ const Footer = () => {
           </div>
 
           <div className="footer-links">
-            <span className="footer-label">// CONNECT</span>
+            <span className="footer-label">{/* CONNECT */}</span>
             <div className="social-grid">
               {socialLinks.map((link, index) => (
                 <motion.a

@@ -109,7 +109,7 @@ const Experience = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <h2 className="skills-title">// TECHNICAL_SKILLS</h2>
+          <h2 className="skills-title">{/*TECHNICAL_SKILLS*/}</h2>
           <div className="skills-grid">
             {Object.entries(skills).map(([category, items], idx) => (
               <div key={idx} className="skill-category">

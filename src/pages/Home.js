@@ -85,7 +85,7 @@ const Home = () => {
                 <span className="cta-arrow">→</span>
               </Link>
               <Link to="/contact" className="cta-secondary">
-                <span className="cta-code">//</span>
+                <span className="cta-code">{/**/}</span>
                 <span className="cta-text">CONTACT</span>
               </Link>
             </motion.div>
