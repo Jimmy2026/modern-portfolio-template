@@ -134,7 +134,7 @@ const Home = () => {
           </div>
 
           <div className="tech-stack">
-            <h3 className="tech-title">// TECH_STACK</h3>
+            <h3 className="tech-title">{/*TECH_STACK*/}</h3>
             <div className="tech-grid">
               {['Python', 'Java', 'JavaScript', 'React', 'Next.js', 'Node.js', 
                 'Docker', 'Azure', 'ML/AI', 'EEG Analysis'].map((tech, idx) => (
