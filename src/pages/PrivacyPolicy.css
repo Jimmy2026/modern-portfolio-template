@@ -1,0 +1,54 @@
+.privacy-page {
+  min-height: 100vh;
+}
+
+.policy-content {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.policy-section {
+  background: linear-gradient(135deg, var(--bg-layer), var(--bg-deep));
+  border: 1px solid rgba(0, 217, 255, 0.2);
+  padding: 2rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.policy-section:hover {
+  border-color: var(--electric-blue);
+  transform: translateX(5px);
+}
+
+.policy-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  color: var(--electric-blue);
+  margin: 0 0 1rem 0;
+}
+
+.policy-section p {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin: 0;
+}
+
+.policy-section a {
+  color: var(--electric-blue);
+  text-decoration: underline;
+}
+
+.policy-section a:hover {
+  color: var(--neon-cyan);
+}
+
+/* Light Mode */
+[data-theme="light"] .policy-section {
+  background: #ffffff;
+  border: 2px solid rgba(0, 136, 204, 0.4);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}

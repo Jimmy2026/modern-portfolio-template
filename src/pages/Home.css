@@ -1,0 +1,330 @@
+.home-page {
+  min-height: 100vh;
+}
+
+/* Hero Section */
+.hero-section {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  position: relative;
+  width: 100%;
+}
+
+.hero-content {
+  z-index: 2;
+  width: 100%;
+}
+
+.hero-label {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.label-line {
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--electric-blue), transparent);
+}
+
+.label-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 0.8rem;
+  color: var(--electric-blue);
+  letter-spacing: 0.15em;
+}
+
+.hero-name-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 0 0 1.5rem 0;
+  max-width: 100%;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+.hero-image {
+  width: clamp(120px, 15vw, 200px);  /* Wider for portrait */
+  height: clamp(160px, 20vw, 280px);  /* Taller for portrait ratio */
+  border-radius: 8px;  /* Changed from 50% to rounded square */
+  object-fit: cover;
+  border: 3px solid var(--electric-blue);
+  box-shadow: 0 0 30px rgba(0, 217, 255, 0.5);
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.hero-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px rgba(0, 217, 255, 0.8);
+}
+
+.hero-name {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.2rem, 5vw, 6rem);
+  font-weight: 700;
+  font-style: italic;
+  color: var(--text-white);
+  margin: 0;
+  letter-spacing: 0.01em;
+  line-height: 1.1;
+  text-shadow: 0 0 40px rgba(0, 217, 255, 0.3);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
+}
+
+.cursor-blink {
+  color: var(--electric-blue);
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+.hero-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.1rem, 2.5vw, 1.8rem);
+  font-weight: 400;
+  font-style: italic;
+  color: var(--text-secondary);
+  margin: 0 0 2rem 0;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.title-prefix,
+.title-suffix {
+  color: var(--deep-green);
+}
+
+.title-divider {
+  color: var(--electric-blue);
+}
+
+.hero-description {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.15rem;
+  color: var(--text-secondary);
+  line-height: 1.9;
+  max-width: 800px;
+  margin-bottom: 3rem;
+}
+
+.hero-cta {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.cta-primary,
+.cta-secondary {
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 16px 32px;
+  border: 2px solid var(--electric-blue);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px);
+  letter-spacing: 0.03em;
+}
+
+.cta-primary {
+  background: var(--electric-blue);
+  color: var(--bg-void);
+}
+
+.cta-primary:hover {
+  background: transparent;
+  color: var(--electric-blue);
+  box-shadow: 0 0 30px rgba(0, 217, 255, 0.4);
+  transform: translateY(-3px);
+}
+
+.cta-secondary {
+  background: transparent;
+  color: var(--text-primary);
+}
+
+.cta-secondary:hover {
+  background: rgba(0, 217, 255, 0.1);
+  border-color: var(--neon-cyan);
+  transform: translateY(-3px);
+}
+
+.cta-code {
+  color: var(--deep-green);
+}
+
+.cta-arrow {
+  transition: transform 0.3s ease;
+}
+
+.cta-primary:hover .cta-arrow,
+.cta-secondary:hover .cta-arrow {
+  transform: translateX(4px);
+}
+
+/* About Section */
+.about-section {
+  padding: 8rem 0;
+  position: relative;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 4rem;
+  margin-top: 3rem;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.about-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  line-height: 1.9;
+  margin: 0;
+}
+
+.education-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.education-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  font-style: italic;
+  color: var(--electric-blue);
+  margin-bottom: 0.5rem;
+}
+
+.education-card {
+  background: linear-gradient(135deg, var(--bg-layer), var(--bg-deep));
+  border: 1px solid rgba(0, 217, 255, 0.2);
+  padding: 1.2rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.education-card:hover {
+  border-color: var(--electric-blue);
+  transform: translateX(5px);
+}
+
+.edu-school {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  color: var(--text-white);
+  margin: 0 0 0.3rem 0;
+}
+
+.edu-degree {
+  font-family: 'Playfair Display', serif;
+  color: var(--text-primary);
+  font-size: 1rem;
+  margin: 0.2rem 0;
+}
+
+.edu-date {
+  font-family: 'Playfair Display', serif;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.tech-stack {
+  margin-top: 4rem;
+  padding-top: 4rem;
+  border-top: 1px solid rgba(0, 217, 255, 0.1);
+}
+
+.tech-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--electric-blue);
+  margin-bottom: 2rem;
+  letter-spacing: 0.05em;
+}
+
+.tech-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.tech-tag {
+  font-family: 'Playfair Display', serif;
+  font-size: 0.9rem;
+  padding: 10px 20px;
+  background: rgba(0, 217, 255, 0.05);
+  border: 1px solid rgba(0, 217, 255, 0.3);
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+  clip-path: polygon(6px 0, 100% 0, 100% calc(100% - 6px), calc(100% - 6px) 100%, 0 100%, 0 6px);
+  cursor: default;
+}
+
+.tech-tag:hover {
+  background: rgba(0, 217, 255, 0.15);
+  border-color: var(--electric-blue);
+  box-shadow: 0 0 20px rgba(0, 217, 255, 0.3);
+  color: var(--electric-blue);
+}
+
+/* Light Mode Cards */
+[data-theme="light"] .education-card {
+  background: #ffffff;
+  border: 2px solid rgba(0, 136, 204, 0.4);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .hero-name {
+    font-size: clamp(1.8rem, 4vw, 4rem);
+  }
+}
+
+@media (max-width: 968px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-cta {
+    flex-direction: column;
+  }
+
+  .cta-primary,
+  .cta-secondary {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-name-container {
+    gap: 1rem;
+  }
+}
