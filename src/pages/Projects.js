@@ -5,6 +5,7 @@ import './Projects.css';
 const Projects = () => {
   const projects = [
     {
+      id: 1,
       title: 'Promotion Altitude Risk Engine',
       subtitle: 'OU Hackathon 2026',
       period: 'FEB 2026',
@@ -17,8 +18,27 @@ const Projects = () => {
           'Created a clean, intuitive dashboard with Tailwind CSS that makes all this complex data actually understandable. Real-time charts, visual analytics, and interactive elements that don\'t require a data science degree to interpret.',
 ],
       tech: ['Next.js', 'Node.js', 'Prisma', 'Docker', 'Hugging Face', 'Tailwind'],
+      github: '', // Add GitHub link if public
+      demo: '',   // Add demo link if available
     },
     {
+      id: 2,
+      title: 'Modern Portfolio Template',
+      subtitle: 'Open Source React Template',
+      description: 'An open-source portfolio website template I created with a terminal-inspired, cyber-organic design. Built with React and Framer Motion, featuring dark/light mode, smooth animations, and a distinctive aesthetic that breaks away from generic templates. The project is available on GitHub for anyone to use and customize for their own portfolio.',
+      points: [
+          'Built the entire frontend using React 18, React Router for navigation, and Framer Motion for smooth page transitions and interactive animations.',
+          'Designed a unique terminal-inspired UI with function call styling (like work_history(), get_in_touch()) that creates a tech-forward aesthetic different from typical portfolio sites.',
+          'Implemented a persistent dark/light theme toggle with CSS variables, allowing users to switch between modes with their preference saved in localStorage.',
+          'Created a fully responsive design that adapts seamlessly across desktop, tablet, and mobile devices with custom breakpoints and flexible layouts.',
+          'Made the project open source under MIT License, wrote comprehensive documentation, and set it up as a GitHub template for easy reuse by other developers.',
+],
+      tech: ['React', 'React Router', 'Framer Motion', 'CSS3', 'JavaScript', 'Vercel'],
+      github: 'https://github.com/Jimmy2026/modern-portfolio-template',
+      demo: 'https://abdulmaliksho.vercel.app',
+    },
+    {
+      id: 3,
       title: 'Brain-Computer Interface Game',
       subtitle: 'ML Research Project',
       period: 'AUG–DEC 2024',
@@ -32,45 +52,93 @@ const Projects = () => {
           'Built the software components using Python with libraries like NumPy for data processing, SciPy for signal analysis, and TensorFlow for the machine learning models. Focused heavily on optimization to keep latency low, which is critical for real-time brain-computer interfaces.',
 ],
       tech: ['Python', 'ML', 'Signal Processing', 'PsychoPy', 'TensorFlow'],
+      github: '', // Add GitHub link if public
+      demo: '',   // Add demo link if available
     },
   ];
 
-  return (
-    <div className="projects-page">
-      <div className="page-container">
-        <motion.div className="section-header" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }}>
-          <h1 className="section-title">build_log( )</h1>
-          <p className="section-description">AI & full-stack development work</p>
-        </motion.div>
+return (
+  <div className="projects-page">
+    <div className="page-container">
+      <motion.div
+        className="section-header"
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+      >
+        <h1 className="section-title">build_log( )</h1>
+        <p className="section-description">
+          AI & full-stack development work
+        </p>
+      </motion.div>
 
-        <div className="projects-grid">
-          {projects.map((proj, idx) => (
-            <motion.div
-              key={idx}
-              className="project-card"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: idx * 0.2 }}
-            >
-              <div className="project-header">
-                <h3 className="project-title">{proj.title}</h3>
-                <p className="project-subtitle">{proj.subtitle}</p>
+      <div className="projects-grid">
+        {projects.map((proj, idx) => (
+          <motion.div
+            key={idx}
+            className="project-card"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: idx * 0.2 }}
+          >
+            <div className="project-header">
+              <h3 className="project-title">{proj.title}</h3>
+              <p className="project-subtitle">{proj.subtitle}</p>
+              {proj.period && (
                 <span className="project-period">{proj.period}</span>
+              )}
+            </div>
+
+            <p className="project-desc">{proj.description}</p>
+
+            <ul className="project-points">
+              {proj.points.map((pt, i) => (
+                <li key={i}>{pt}</li>
+              ))}
+            </ul>
+
+            <div className="project-tech">
+              {proj.tech.map((t, i) => (
+                <span key={i} className="tech-tag">
+                  {t}
+                </span>
+              ))}
+            </div>
+
+            {(proj.github || proj.demo) && (
+              <div className="project-links">
+                {proj.github && (
+                  <a
+                    href={proj.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="project-link"
+                  >
+                    <span>View Code</span>
+                    <span className="link-arrow">→</span>
+                  </a>
+                )}
+
+                {proj.demo && (
+                  <a
+                    href={proj.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="project-link project-link-demo"
+                  >
+                    <span>Live Demo</span>
+                    <span className="link-arrow">→</span>
+                  </a>
+                )}
               </div>
-              <p className="project-desc">{proj.description}</p>
-              <ul className="project-points">
-                {proj.points.map((pt, i) => (<li key={i}>{pt}</li>))}
-              </ul>
-              <div className="project-tech">
-                {proj.tech.map((t, i) => (<span key={i} className="tech-tag">{t}</span>))}
-              </div>
-            </motion.div>
-          ))}
-        </div>
+            )}
+          </motion.div>
+        ))}
       </div>
     </div>
-  );
+  </div>
+);
 };
 
 export default Projects;
+

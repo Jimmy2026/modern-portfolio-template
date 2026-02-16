@@ -245,7 +245,7 @@ If you find this template helpful, please give it a ⭐️ on GitHub!
 ## 👨‍💻 Author
 
 **AbdulMalik Shodunke**
-- Website: [malik.vercel.app](https://malik.vercel.app)
+- Website: [abdulmaliksho.vercel.app](https://abdulmaliksho.vercel.app)
 - GitHub: [@Jimmy2026](https://github.com/Jimmy2026)
 - LinkedIn: [@abdulmalikshodunke](https://linkedin.com/in/abdulmalikshodunke)
 
