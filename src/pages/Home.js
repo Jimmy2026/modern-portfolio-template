@@ -78,7 +78,7 @@ const Home = () => {
                     Hi there 👋 I’m an aspiring software engineer who somehow ended up enjoying both full stack development and cybersecurity, which probably says a lot about me. I like bouncing between different parts of tech just to see what I can get working.
                 </p>
                 <p className="about-text">
-                    Front end has been my favorite lately. There’s something about mixing logic with design and watching a blank page slowly make me feel like I’m a graphic designer for a few hours. If it looks clean and actually works, I’m happy.
+                    I’ve tried a bit of everything, but front end is what I end up doing for fun because I like feeling like a graphic designer for a few hours.
                 </p>
                 <p className="about-text">
                     When I’m not working, I’m usually reading graphic novels, working out, or playing video games (no, not FPS).
