@@ -74,9 +74,15 @@ const Home = () => {
             </motion.h2>
 
             <motion.p className="hero-description" variants={itemVariants}>
-              Welcome to my corner of the internet. I'm a CS student who likes building things,
-                breaking things (ethically), and figuring out how technology actually works. Stick
-                around if you want to see what I've been working on.
+                <p className="about-text">
+                    Hi there 👋 I’m an aspiring software engineer who somehow ended up enjoying both full stack development and cybersecurity, which probably says a lot about me. I like bouncing between different parts of tech just to see what I can get working.
+                </p>
+                <p className="about-text">
+                    Front end has been my favorite lately. There’s something about mixing logic with design and watching a blank page slowly make me feel like I’m a graphic designer for a few hours. If it looks clean and actually works, I’m happy.
+                </p>
+                <p className="about-text">
+                    When I’m not working, I’m usually reading graphic novels, working out, or playing video games (no, not FPS).
+                </p>
             </motion.p>
 
             <motion.div className="hero-cta" variants={itemVariants}>
@@ -88,6 +94,16 @@ const Home = () => {
                 <span className="cta-code">{/**/}</span>
                 <span className="cta-text">CONTACT</span>
               </Link>
+
+              <a
+                  href="https://drive.google.com/file/d/1I2FwRtNxfXhdBfptbAp7QyqiJRXAGUOx/view?usp=drive_link"
+                  className="cta-secondary"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >
+                  <span className="cta-text">RESUME.PDF</span>
+                  <span className="cta-arrow">→</span>
+              </a>
             </motion.div>
           </motion.div>
         </section>
@@ -100,35 +116,31 @@ const Home = () => {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
         >
-          <div className="section-header">
-            <h2 className="section-title">who_am_i( )</h2>
-          </div>
 
           <div className="about-grid">
-            <div className="about-content">
-              <p className="about-text">
-                  I'm a Computer Science student at the University of Oklahoma with interests spanning software engineering, AI, and cybersecurity. I enjoy working on projects that sit at the intersection of these fields and exploring where technology can have real impact.
-              </p>
-              <p className="about-text">
-                  Currently, I'm researching how AI influences human cognition and decision-making processes. Previously, I worked on Brain-Computer Interface systems that translate EEG signals into computer commands. I've also built full-stack applications at hackathons and hold a CodePath Cybersecurity certification.
-              </p>
-              <p className="about-text">
-                  Long-term, I'm interested in roles where I can work on technically challenging problems—whether that's building scalable systems, developing AI applications, or working in security. Outside of coding, I'm into video games and reading manhwa, which honestly keeps me sane between projects and deadlines.
-              </p>
-            </div>
-
             <div className="education-section">
                 <h3 className="education-title">Education</h3>
                 <div className="education-card">
-                    <h4 className="edu-school">University of Oklahoma</h4>
-                    <p className="edu-degree">Bachelors' in Computer Science</p>
-                    <p className="edu-date">2023 - 2026</p>
+                    <img src="/ou.png" alt="University of Oklahoma logo" className="edu-logo" />
+                    <div className="edu-info">
+                        <p className="edu-date">2023 - 2026</p>
+                        <h4 className="edu-school">University of Oklahoma</h4>
+                        <p className="edu-degree">Bachelors' in Computer Science</p>
+                        <p className="edu-courses">
+                            Courses: Data Structures and Algorithms, Theory of Computation, Operating Systems, Software
+                            Engineering, Database Management, Parallel Distributed Networks, Artificial Intelligence, Neural Data Science, Computer Organization
+                        </p>
+                    </div>
                 </div>
 
+
                 <div className="education-card">
-                    <h4 className="edu-school">Independence Community College</h4>
-                    <p className="edu-degree">Computer Science</p>
-                    <p className="edu-date">2022 - 2023</p>
+                    <img src="/indycc.png" alt="Independence Community College logo" className="edu-logo" />
+                    <div className="edu-info">
+                        <p className="edu-date">2022 - 2023</p>
+                        <h4 className="edu-school">Independence Community College</h4>
+                        <p className="edu-degree">Computer Science</p>
+                    </div>
                 </div>
             </div>
           </div>
