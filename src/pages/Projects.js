@@ -23,6 +23,23 @@ const Projects = () => {
     },
     {
       id: 2,
+      title: 'Ripple Platform',
+      subtitle: 'AI-Powered Nonprofit Analytics SaaS',
+      period: 'Feb 2026',
+      description: 'Full-stack SaaS platform for nonprofit donor management and multi-site analytics, designed to reduce manual data entry through AI-powered automation.',
+      points: [
+          'Designed and built a multi-tenant architecture using Next.js App Router and Supabase Postgres, modeling organizations, sites, donors, campaigns, and interactions with relational integrity and role-based access control.',
+          'Integrated Hugging Face inference APIs to generate executive reports and personalized donor outreach drafts from structured engagement data, focusing on prompt reliability and context-aware output.',
+          'Built a real-time analytics dashboard with dynamic KPIs across multiple sites, implementing server-side data fetching and optimized queries for performance.',
+          'Implemented secure authentication flows using Supabase Auth with protected routes and session-aware rendering.',
+          'Structured the application for production-style deployment on Vercel, separating server-only logic from client components and managing environment variables securely.',
+      ],
+      tech: ['Next.js 14', 'TypeScript', 'Supabase', 'PostgreSQL', 'Hugging Face API', 'Tailwind CSS', 'Vercel'],
+      github: 'https://github.com/Jimmy2026/ripple-platform',
+      demo: '', // add if deployed
+    },
+    {
+      id: 3,
       title: 'Modern Portfolio Template',
       subtitle: 'Open Source React Template',
       description: 'An open-source portfolio website template I created with a terminal-inspired, cyber-organic design. Built with React and Framer Motion, featuring dark/light mode, smooth animations, and a distinctive aesthetic that breaks away from generic templates. The project is available on GitHub for anyone to use and customize for their own portfolio.',
@@ -38,7 +55,7 @@ const Projects = () => {
       demo: 'https://abdulmaliksho.vercel.app',
     },
     {
-      id: 3,
+      id: 4,
       title: 'Brain-Computer Interface Game',
       subtitle: 'ML Research Project',
       period: 'AUG–DEC 2024',
