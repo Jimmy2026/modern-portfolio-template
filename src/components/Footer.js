@@ -26,7 +26,16 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-content">
           <div className="footer-brand">
-            <p className="footer-tagline">Building The Future One Step At A Time</p>
+            <motion.a
+              href="https://github.com/Jimmy2026/modern-portfolio-template"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer-template-link"
+              whileHover={{ scale: 1.03 }}
+              whileTap={{ scale: 0.97 }}
+            >
+              Build a website like this →
+            </motion.a>
           </div>
 
           <div className="footer-links">

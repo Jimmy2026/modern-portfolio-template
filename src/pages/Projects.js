@@ -40,22 +40,6 @@ const Projects = () => {
     },
     {
       id: 3,
-      title: 'Modern Portfolio Template',
-      subtitle: 'Open Source React Template',
-      description: 'An open-source portfolio website template I created with a terminal-inspired, cyber-organic design. Built with React and Framer Motion, featuring dark/light mode, smooth animations, and a distinctive aesthetic that breaks away from generic templates. The project is available on GitHub for anyone to use and customize for their own portfolio.',
-      points: [
-          'Built the entire frontend using React 18, React Router for navigation, and Framer Motion for smooth page transitions and interactive animations.',
-          'Designed a unique terminal-inspired UI with function call styling (like work_history(), get_in_touch()) that creates a tech-forward aesthetic different from typical portfolio sites.',
-          'Implemented a persistent dark/light theme toggle with CSS variables, allowing users to switch between modes with their preference saved in localStorage.',
-          'Created a fully responsive design that adapts seamlessly across desktop, tablet, and mobile devices with custom breakpoints and flexible layouts.',
-          'Made the project open source under MIT License, wrote comprehensive documentation, and set it up as a GitHub template for easy reuse by other developers.',
-],
-      tech: ['React', 'React Router', 'Framer Motion', 'CSS3', 'JavaScript', 'Vercel'],
-      github: 'https://github.com/Jimmy2026/modern-portfolio-template',
-      demo: 'https://abdulmaliksho.vercel.app',
-    },
-    {
-      id: 4,
       title: 'Brain-Computer Interface Game',
       subtitle: 'ML Research Project',
       period: 'AUG–DEC 2024',
