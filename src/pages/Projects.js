@@ -23,23 +23,56 @@ const Projects = () => {
     },
     {
       id: 2,
+      title: "National Park Service Database",
+      subtitle: "Database  Project – University of Oklahoma",
+      period: "Fall 2025",
+      description:  "Originally an Azure SQL relational database project, I extended it into a full-stack web application by building a Node.js backend and interactive UI to make the system usable beyond raw SQL.",
+      points: [
+        "Designed a normalized relational schema with foreign keys and structured constraints",
+        "Built a Node.js + Express API to expose database functionality through REST endpoints",
+        "Added a responsive dashboard with live statistics, activity tracking, and management tools",
+        "Implemented donation processing logic and a secure raw SQL interface for advanced queries"
+      ],
+      tech: ["Node.js", "Express", "SQLite", "JavaScript"],
+      github: "https://github.com/Jimmy2026/NationalParkDB",
+      demo: "https://nationalparkdb.onrender.com",
+    },
+    {
+      id: 3,
+      title: 'Recipe-AI',
+      subtitle: 'Software Engineering Group Project — University of Oklahoma',
+      period: 'SPRING 2025',
+      description: 'A web application that generates custom recipes based on ingredients provided by the user.',
+      points: [
+          'Allows users to enter ingredients they already have and generates complete recipes tailored to those inputs.',
+          'Provides step-by-step cooking instructions along with ingredient measurements and preparation details.',
+          'Suggests meal ideas to help reduce food waste and make cooking more accessible.',
+          'Delivers real-time results through AI integration, allowing users to quickly explore different recipe options.',
+          'Built with a responsive interface so it works smoothly across desktop and mobile devices.'
+      ],
+      tech: ['React', 'Node.js + Express', 'MongoDB', 'Mongoose', 'Python (TensorFlow)', 'NLP', 'Axios', 'Docker'],
+      github: '', // private repository
+      demo: 'https://drive.google.com/file/d/1QjINrjBmTg_gTimpyZ74RWT-tMJG2auS/view?usp=sharing'
+    },
+    {
+      id: 4,
       title: 'Ripple Platform',
       subtitle: 'AI-Powered Nonprofit Analytics SaaS',
       period: 'Feb 2026',
       description: 'Full-stack SaaS platform for nonprofit donor management and multi-site analytics, designed to reduce manual data entry through AI-powered automation.',
       points: [
-          'Designed and built a multi-tenant architecture using Next.js App Router and Supabase Postgres, modeling organizations, sites, donors, campaigns, and interactions with relational integrity and role-based access control.',
-          'Integrated Hugging Face inference APIs to generate executive reports and personalized donor outreach drafts from structured engagement data, focusing on prompt reliability and context-aware output.',
-          'Built a real-time analytics dashboard with dynamic KPIs across multiple sites, implementing server-side data fetching and optimized queries for performance.',
-          'Implemented secure authentication flows using Supabase Auth with protected routes and session-aware rendering.',
-          'Structured the application for production-style deployment on Vercel, separating server-only logic from client components and managing environment variables securely.',
+          'Built a multi-tenant system with Next.js and Supabase to manage organizations, sites, donors, and campaigns with proper role-based permissions.',
+          'Connected Hugging Face APIs to generate executive summaries and donor outreach drafts from engagement data.',
+          'Developed a real-time dashboard showing key metrics across sites, optimizing database queries for faster load times.',
+          'Implemented authentication and protected routes using Supabase Auth.',
+          'Deployed the application to Vercel with a clean separation between server and client logic.',
       ],
       tech: ['Next.js 14', 'TypeScript', 'Supabase', 'PostgreSQL', 'Hugging Face API', 'Tailwind CSS', 'Vercel'],
       github: 'https://github.com/Jimmy2026/ripple-platform',
       demo: '', // add if deployed
     },
     {
-      id: 3,
+      id: 5,
       title: 'Brain-Computer Interface Game',
       subtitle: 'ML Research Project',
       period: 'AUG–DEC 2024',
@@ -51,7 +84,7 @@ const Projects = () => {
           'Worked with neuroscientists, engineers, and designers to make the system actually usable. We ran studies with 15+ participants to test how well it worked and where we needed to improve.',
           'Wrote up our findings for research reports, focusing on what we learned about reducing calibration time and making the system work consistently across multiple sessions—two big problems in BCI research.',
           'Built the software components using Python with libraries like NumPy for data processing, SciPy for signal analysis, and TensorFlow for the machine learning models. Focused heavily on optimization to keep latency low, which is critical for real-time brain-computer interfaces.',
-],
+  ],
       tech: ['Python', 'ML', 'Signal Processing', 'PsychoPy', 'TensorFlow'],
       github: '', // Add GitHub link if public
       demo: '',   // Add demo link if available
