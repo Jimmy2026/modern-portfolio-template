@@ -84,11 +84,27 @@ const Projects = () => {
           'Worked with neuroscientists, engineers, and designers to make the system actually usable. We ran studies with 15+ participants to test how well it worked and where we needed to improve.',
           'Wrote up our findings for research reports, focusing on what we learned about reducing calibration time and making the system work consistently across multiple sessions—two big problems in BCI research.',
           'Built the software components using Python with libraries like NumPy for data processing, SciPy for signal analysis, and TensorFlow for the machine learning models. Focused heavily on optimization to keep latency low, which is critical for real-time brain-computer interfaces.',
-  ],
+    ],
       tech: ['Python', 'ML', 'Signal Processing', 'PsychoPy', 'TensorFlow'],
       github: '', // Add GitHub link if public
       demo: '',   // Add demo link if available
     },
+    {
+      id: 6,
+      title: 'Showing Some Humanity',
+      subtitle: 'Advocacy Web Project',
+      period: 'AUG–DEC 2023',
+      description: 'Single-page advocacy website raising awareness about global food insecurity, built during CodePath\'s Web Development 101 program and redesigned in 2025 with a modern UI.',
+      points: [
+          'Built a responsive single-page site from scratch using vanilla HTML, CSS, and JavaScript (no frameworks) covering hunger statistics, impact breakdowns, and a working petition form with live signature tracking.',
+          'Implemented interactive features including dark mode toggle, scroll-triggered reveal animations, form validation with error handling, and a modal popup — all in native JavaScript without any libraries.',
+          'Redesigned the project in 2025 with a production-grade UI: CSS custom properties for theming, Intersection Observer API for scroll animations, CSS Grid and Flexbox layouts, and an earthy typographic design system using Playfair Display and Source Serif 4.',
+          'Structured the site around real UN World Food Programme data, translating complex statistics into digestible visual components including a stat grid, regional impact breakdown, and scrolling news ticker.',
+      ],
+      tech: ['HTML', 'CSS', 'JavaScript'],
+      github: 'https://github.com/Jimmy2026/Poverty-Aid-Website',
+      demo: 'https://jimmy2026.github.io/Poverty-Aid-Website',
+    }
   ];
 
 return (
