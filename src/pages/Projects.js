@@ -24,9 +24,9 @@ const Projects = () => {
     {
       id: 2,
       title: "National Park Service Database",
-      subtitle: "Database  Project – University of Oklahoma",
-      period: "Fall 2025",
-      description:  "Originally an Azure SQL relational database project, I extended it into a full-stack web application by building a Node.js backend and interactive UI to make the system usable beyond raw SQL.",
+      subtitle: "Full-Stack Database Application",
+      period: "OCT 2025",
+      description:  "Built a relational database system and extended it into a full-stack web application with a Node.js backend and interactive UI.",
       points: [
         "Designed a normalized relational schema with foreign keys and structured constraints",
         "Built a Node.js + Express API to expose database functionality through REST endpoints",
