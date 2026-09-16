@@ -18,7 +18,7 @@ const Projects = () => {
           'Created a clean, intuitive dashboard with Tailwind CSS that makes all this complex data actually understandable. Real-time charts, visual analytics, and interactive elements that don\'t require a data science degree to interpret.',
 ],
       tech: ['Next.js', 'Node.js', 'Prisma', 'Docker', 'Hugging Face', 'Tailwind'],
-      github: '', // Add GitHub link if public
+      github: "https://github.com/Jimmy2026/promotion-altitude-risk-engine", // Add GitHub link if public
       demo: '',   // Add demo link if available
     },
     {
