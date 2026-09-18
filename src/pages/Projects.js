@@ -19,7 +19,7 @@ const Projects = () => {
 ],
       tech: ['Next.js', 'Node.js', 'Prisma', 'Docker', 'Hugging Face', 'Tailwind'],
       github: "https://github.com/Jimmy2026/promotion-altitude-risk-engine",
-      demo: "promotionengine.vercel.app",
+      demo: "https://promotionengine.vercel.app",
     },
     {
       id: 2,
